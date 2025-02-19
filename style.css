@@ -1,0 +1,93 @@
+html {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, #f8f8f8, #ddd);
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 5px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Clock Numbers */
+  .numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .number {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Positioning Numbers Correctly */
+  .n1 { top: 15%; left: 75%; }
+  .n2 { top: 25%; left: 88%; }
+  .n3 { top: 50%; left: 95%; }
+  .n4 { top: 75%; left: 88%; }
+  .n5 { top: 85%; left: 75%; }
+  .n6 { top: 90%; left: 50%; }
+  .n7 { top: 85%; left: 25%; }
+  .n8 { top: 75%; left: 12%; }
+  .n9 { top: 50%; left: 5%; }
+  .n10 { top: 25%; left: 12%; }
+  .n11 { top: 15%; left: 25%; }
+  .n12 { top: 10%; left: 50%; }
+  
+  /* Clock Hands */
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+    transition: transform 0.5s cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hour-hand {
+    width: 8px;
+    height: 8rem;
+    background: black;
+  }
+  
+  .min-hand {
+    width: 6px;
+    height: 10rem;
+    background: darkblue;
+  }
+  
+  .second-hand {
+    width: 3px;
+    height: 12rem;
+    background: red;
+  }
+  
